@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>See Through Trees Blog</title>
+  <link href="http://seethroughtrees.github.io/atom.xml" rel="self"/>
+  <link href="http://seethroughtrees.github.io"/>
+  <updated>2013-10-23T06:21:05.666Z</updated>
+  <id>http://seethroughtrees.github.io</id>
+  <author>
+    <name>SeeThroughTrees</name>
+    <email>blog@seethroughtrees.com</email>
+  </author>
+
+  
+    <entry>
+      <title>Two Stage - CSS Buttons</title>
+      <link href="http://seethroughtrees.github.io//posts/two-stage-css-buttons"/>
+      <updated>2013-10-21T00:00:18.000Z</updated>
+      <id>http://seethroughtrees.github.io//posts/two-stage-css-buttons</id>
+      <content type="html">&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;!-- Meta--&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;&lt;title&gt;Two Stage - CSS Buttons | See Through Trees Blog&lt;/title&gt;&lt;meta name=&quot;description&quot; content=&quot;Tech Blog, and random musings.&quot;&gt;&lt;meta name=&quot;keywords&quot; content=&quot;developer, javascript, oocss, front-end, web-developer, angularjs, dev-blog&quot;&gt;&lt;meta name=&quot;author&quot; content=&quot;SeeThroughTrees&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.53.4&quot; /&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, user-scalable=no&quot;&gt;&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;//cloud.typography.com/6822852/797262/css/fonts.css&quot;&gt;&lt;!-- Icons--&gt;&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;ico/apple-touch-icon.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;ico/apple-touch-icon-57x57.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;ico/apple-touch-icon-72x72.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;ico/apple-touch-icon-114x114.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;ico/apple-touch-icon-144x144.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;ico/apple-touch-icon-60x60.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;ico/apple-touch-icon-120x120.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;ico/apple-touch-icon-76x76.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;ico/apple-touch-icon-152x152.png&quot;&gt;&lt;!--[if lt IE 9]&gt;&lt;script async src=&quot;//html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;&lt;!-- Styles--&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/vendor/astro.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/styles/global.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/vendor/icomoon.css&quot; /&gt;&lt;/head&gt;&lt;body&gt;&lt;ul class=&quot;social-nav&quot;&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/&quot; class=&quot;icon-home&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/seeThroughTrees&quot; class=&quot;icon-twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/seethroughtrees/&quot; class=&quot;icon-github&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;header class=&quot;main-header&quot;&gt;&lt;nav class=&quot;nav-wrap&quot;&gt;&lt;span class=&quot;book-ends&quot;&gt;{&lt;/span&gt;&lt;a href=&quot;http://seethroughtrees.github.io/&quot; class=&quot;logo&quot;&gt;See Through Trees&lt;/a&gt;&lt;span class=&quot;book-ends&quot;&gt;}&lt;/span&gt;&lt;ul class=&quot;nav&quot;&gt;&lt;li&gt;&lt;a id=&quot;recentBtn&quot; href=&quot;#&quot;&gt;Recent&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;relatedBtn&quot; href=&quot;#&quot;&gt;Related&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;&lt;/header&gt;&lt;div class=&quot;container&quot;&gt;&lt;hr&gt;&lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;&lt;h1&gt;Two Stage - CSS Buttons&lt;/h1&gt;&lt;span class=&quot;post-date&quot;&gt;Sun Oct 20 2013:&lt;/span&gt;&lt;div class=&quot;post-content&quot;&gt;&lt;p&gt;I love UX.&lt;/p&gt;
+&lt;p&gt;Especially when the benefit is nearly transparent.  Great UX makes an action intuitive, even if you&amp;#39;ve never seen it before, you feel like you have.  It just works.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://gumroad.com&quot; title=&quot;Gumroad&quot;&gt;Gumroad&lt;/a&gt; has been creating some great user experiences.  If you haven&amp;#39;t used their checkout process when buying a digital good.  You should.  And if not, just check out their site to see how clever and easy someone can make a normally annoying process like checking out.&lt;/p&gt;
+&lt;p&gt;Last week, someone tweeted about their &lt;a href=&quot;http://gumroad.github.io/countdown.js/&quot; title=&quot;Countdown.js&quot;&gt;Countdown.js&lt;/a&gt; plugin.  It gives users a 10 second opportunity to cancel a process.  Like a delete button.  Once they hit the delete button, the user sees a countdown allowing them to cancel if they click on it.&lt;/p&gt;
+&lt;p&gt;I loved the idea of making a multi-purpose button.  It avoids having to use an ugly alert box, or a distracting modal.  But, I felt hesitant to include the countdown, because it added a touch of pressure for the user.  Especially since they have probably never seen that functionality before.&lt;/p&gt;
+&lt;p&gt;It got me thinking.  Why not give multiple actions to a single button?  The best use case I could think of was &lt;strong&gt;confirming an action&lt;/strong&gt;.  And that way I can do most of it in CSS instead of javascript.  Which I think provides a better browser experience.&lt;/p&gt;
+&lt;p&gt;Here&amp;#39;s how the finished product would react...&lt;/p&gt;
+&lt;p&gt;&lt;p data-height=&quot;268&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;ef9110de8177a8c8067a6c5c7d5ea17b&quot; data-user=&quot;adamin&quot; data-default-tab=&quot;result&quot; class='codepen'&gt;See the Pen &lt;a href='http://codepen.io/adamin/pen/ef9110de8177a8c8067a6c5c7d5ea17b'&gt;Two Stage Button example&lt;/a&gt; by adaml (&lt;a href='http://codepen.io/adamin'&gt;@adamin&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;The HTML was simple.  I started with my standard button.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-markup&quot;&gt;&amp;lt;button class=&amp;quot;danger&amp;quot;&amp;gt;Delete&amp;lt;/button&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And some simple SCSS  (I use &lt;a href=&quot;http://bourbon.io&quot; title=&quot;Bourbon&quot;&gt;bourbon&lt;/a&gt; as a mixin library, but you can easily write the full CSS or use &lt;a href=&quot;http://compass-style.org/&quot; title=&quot;Compass&quot;&gt;compass&lt;/a&gt;)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-scss&quot;&gt;// colors set by variable
+$danger-color: hsla(3.71, 58.79%, 32.35%, 1);
+$danger-bg: hsla(1.46, 83.67%, 90.39%, 1);
+$grey: hsla(0, 0%, 89.8%, 1);
+$tabSize: 50px;
+
+// styling the class of the button
+.danger {
+  background: $danger-bg;
+  color: $danger-color;
+}
+
+// button style
+.button, button {
+  position: relative;
+  display: inline-block;
+  height: $tabSize;
+  padding: 0 2em;
+  border-radius: 10px;
+  border: 0;
+  margin: 2em;
+  // prevent mobile browsers from styling this button
+  @include appearance(none);
+  // add transition for smooth color shifting
+  @include transition(background 200ms linear);
+  &amp;amp;:hover {
+    color: darken($danger-color, 5%);
+    background: darken($danger-bg, 3%);
+  }
+  &amp;amp;:focus {
+    outline: 0;
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This gave me a basic style button with a hover effect.&lt;/p&gt;
+&lt;p&gt;Now, I know I want to give the button some alternate text on the first click.  But I need a place to store the data, and the easiest way is inside the element itself with &lt;a href=&quot;http://html5doctor.com/html5-custom-data-attributes/&quot; title=&quot;Data Attributes&quot;&gt;data-attributes&lt;/a&gt;.  I&amp;#39;m going to need before text, after text, and data for the icon.&lt;/p&gt;
+&lt;p&gt;So I modified my html to this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-markup&quot;&gt;&amp;lt;button data-alt-text=&amp;quot;Are you sure?&amp;quot; data-og-text=&amp;quot;Delete&amp;quot; data-icon=&amp;quot;?&amp;quot; class=&amp;quot;danger&amp;quot;&amp;gt;Delete&amp;lt;/button&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I now have original text as &lt;strong&gt;Delete&lt;/strong&gt;, my alternate text is &lt;strong&gt;Undo&lt;/strong&gt;, and I&amp;#39;m adding a question mark as the icon, but you can use whatever you want.&lt;/p&gt;
+&lt;p&gt;Using jQuery to modify the text of the button is straight forward.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;// caching the list of elements
+var $altBtn = $(&amp;#39;[data-alt-text]&amp;#39;);
+
+// bind the click event to to the set
+$altBtn.on(&amp;#39;click&amp;#39;, function() {
+
+  // cache &amp;#39;this&amp;#39; object, and its data
+  var $this = $(this),
+      ogText = $this.data(&amp;#39;og-text&amp;#39;),
+      altText = $this.data(&amp;#39;alt-text&amp;#39;);
+
+  // toggle class
+  $this.toggleClass(&amp;#39;is-clicked&amp;#39;);
+
+  // replace the text depending on the class
+  $this.hasClass(&amp;#39;is-clicked&amp;#39;) ?
+    $this.text(altText) :
+    $this.text(ogText);
+});&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That&amp;#39;s all the javascript we need.  And best of all, it allows us to re-use the code wherever we want in our site.  Any time we add &lt;strong&gt;data-alt-text&lt;/strong&gt; to one of our elements.  They will be added to the array.&lt;/p&gt;
+&lt;p&gt;If you don&amp;#39;t want this behavior, you can go ahead and make the selector more specific.&lt;/p&gt;
+&lt;p&gt;Now that we have the text and class changing on click.  Let&amp;#39;s add some styles to the &lt;a href=&quot;http://css-tricks.com/pseudo-element-roundup/&quot; title=&quot;Pseudo Elements on CSS Tricks&quot;&gt;:after pseudo element&lt;/a&gt;.  (I love the &lt;a href=&quot;http://smacss.com/&quot; title=&quot;Smacss&quot;&gt;smacss&lt;/a&gt; style of prefixing &lt;strong&gt;is-&lt;/strong&gt; before any of my &lt;strong&gt;state classes&lt;/strong&gt;.  It makes the intention so much clearer.)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-scss&quot;&gt;  &amp;amp;:after {
+    // this is a cool trick to use the content of an attribute in your content
+    content: attr(data-icon);
+    background: $danger-bg;
+    line-height: $tabSize;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-size: 1.5em;
+    top: 0;
+    width: $tabSize;
+    position: absolute;
+    right: 0;
+    border-radius: 10px;
+    // lets push it behind when its not in use
+    z-index: -1;
+    @include transition(background, right 200ms linear);
+  }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Last, lets add some visual for when the button has the &amp;#39;is-clicked&amp;#39; class.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-scss&quot;&gt;  &amp;amp;.is-clicked {
+    background: $grey;
+    @include border-right-radius(0);
+    &amp;amp;:hover {
+      background: darken($grey, 2%);
+      &amp;amp;:after {
+        background: darken($danger-bg, 2%);
+      }
+    }
+    &amp;amp;:after {
+      right: -$tabSize;
+      // now we want the element in front
+      z-index: 1;
+      @include border-left-radius(0);
+    }
+  }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And that&amp;#39;s it!  We now have a button that shows two different states depending on class.&lt;/p&gt;
+&lt;p&gt;And the best part, use the jQuery &lt;a href=&quot;http://api.jquery.com/on/&quot; title=&quot;jQuery On&quot;&gt;on method&lt;/a&gt;, and you can now bind a new click function to the button with an &amp;#39;is-clicked&amp;#39; class. Then attach your function to the semi-clicked button only!&lt;/p&gt;
+&lt;p&gt;Sweet.&lt;/p&gt;
+&lt;/div&gt;&lt;/article&gt;&lt;aside id=&quot;flyoutCancel&quot; class=&quot;flyout-cancel&quot;&gt;&lt;/aside&gt;&lt;aside id=&quot;recentList&quot; class=&quot;flyout-list&quot;&gt;&lt;h3&gt;Recent Posts&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/two-stage-css-buttons&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Two Stage - CSS Buttons&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/github-pages-with-docpad&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Deploying to Github Pages With Docpad&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/preparing-your-website-for-deployment&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Preparing Your Website For Deployment&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/styles-seed-explained&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Styles Seed Explained&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;&lt;aside id=&quot;relatedList&quot; class=&quot;flyout-list&quot;&gt;&lt;h3&gt;Related Posts&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/styles-seed-explained&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Styles Seed Explained&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;&lt;footer&gt;&lt;p&gt;If you like this post, please follow me on Twitter &amp;nbsp;&lt;a href=&quot;https://twitter.com/seethroughtrees&quot; title=&quot;SeeThroughTrees on Twitter&quot;&gt;@SeeThroughTrees&lt;/a&gt;&lt;/p&gt;&lt;section id=&quot;related&quot;&gt;&lt;h3&gt;Related Posts&lt;/h3&gt;&lt;nav class=&quot;linklist&quot;&gt;&lt;li&gt;&lt;span&gt;Sun Sep 15 2013&lt;/span&gt; &amp;raquo;&amp;nbsp;&lt;a href=&quot;/posts/styles-seed-explained&quot;&gt;Styles Seed Explained&lt;/a&gt;&lt;/li&gt;&lt;/nav&gt;&lt;/section&gt;&lt;/footer&gt;&lt;hr/&gt;&lt;div id=&quot;disqus-container&quot;&gt;&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+	(function(){
+		window.disqus_shortname = 'seethroughtrees';
+		window.disqus_developer = '1';
+		window.disqus_url = 'http://seethroughtrees.github.io/posts/two-stage-css-buttons';
+		window.disqus_identifier = 'posts-two-stage-css-buttons';
+		window.disqus_title = 'Two Stage - CSS Buttons';
+		if ( window.DISQUS ) {
+			return DISQUS.reset({
+				reload: true,
+				config: function () {
+					this.page.identifier = window.disqus_identifier;
+					this.page.url = window.disqus_url;
+					this.page.title = window.disqus_title;
+				}
+			});
+		}
+		else {
+		  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		}
+	})();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;http://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;a href=&quot;http://disqus.com&quot; class=&quot;dsq-brlink&quot;&gt;comments powered by &lt;span class=&quot;logo-disqus&quot;&gt;Disqus&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/section&gt;&lt;hr&gt;&lt;footer class=&quot;main-footer&quot;&gt;&lt;div&gt;© SeeThroughTrees&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;!-- Scripts--&gt;&lt;script &gt;var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-44037173-1']);
+_gaq.push(['_trackPageview']);
+(function(){
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/vendor/prism.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/vendor/jquery.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/scripts/script.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</content>
+    </entry>
+  
+    <entry>
+      <title>Deploying to Github Pages With Docpad</title>
+      <link href="http://seethroughtrees.github.io//posts/github-pages-with-docpad"/>
+      <updated>2013-09-27T00:00:18.000Z</updated>
+      <id>http://seethroughtrees.github.io//posts/github-pages-with-docpad</id>
+      <content type="html">&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;!-- Meta--&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;&lt;title&gt;Deploying to Github Pages With Docpad | See Through Trees Blog&lt;/title&gt;&lt;meta name=&quot;description&quot; content=&quot;Tech Blog, and random musings.&quot;&gt;&lt;meta name=&quot;keywords&quot; content=&quot;developer, javascript, oocss, front-end, web-developer, angularjs, dev-blog&quot;&gt;&lt;meta name=&quot;author&quot; content=&quot;SeeThroughTrees&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.53.4&quot; /&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, user-scalable=no&quot;&gt;&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;//cloud.typography.com/6822852/797262/css/fonts.css&quot;&gt;&lt;!-- Icons--&gt;&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;ico/apple-touch-icon.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;ico/apple-touch-icon-57x57.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;ico/apple-touch-icon-72x72.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;ico/apple-touch-icon-114x114.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;ico/apple-touch-icon-144x144.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;ico/apple-touch-icon-60x60.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;ico/apple-touch-icon-120x120.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;ico/apple-touch-icon-76x76.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;ico/apple-touch-icon-152x152.png&quot;&gt;&lt;!--[if lt IE 9]&gt;&lt;script async src=&quot;//html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;&lt;!-- Styles--&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/vendor/astro.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/styles/global.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/vendor/icomoon.css&quot; /&gt;&lt;/head&gt;&lt;body&gt;&lt;ul class=&quot;social-nav&quot;&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/&quot; class=&quot;icon-home&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/seeThroughTrees&quot; class=&quot;icon-twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/seethroughtrees/&quot; class=&quot;icon-github&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;header class=&quot;main-header&quot;&gt;&lt;nav class=&quot;nav-wrap&quot;&gt;&lt;span class=&quot;book-ends&quot;&gt;{&lt;/span&gt;&lt;a href=&quot;http://seethroughtrees.github.io/&quot; class=&quot;logo&quot;&gt;See Through Trees&lt;/a&gt;&lt;span class=&quot;book-ends&quot;&gt;}&lt;/span&gt;&lt;ul class=&quot;nav&quot;&gt;&lt;li&gt;&lt;a id=&quot;recentBtn&quot; href=&quot;#&quot;&gt;Recent&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;relatedBtn&quot; href=&quot;#&quot;&gt;Related&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;&lt;/header&gt;&lt;div class=&quot;container&quot;&gt;&lt;hr&gt;&lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;&lt;h1&gt;Deploying to Github Pages With Docpad&lt;/h1&gt;&lt;span class=&quot;post-date&quot;&gt;Thu Sep 26 2013:&lt;/span&gt;&lt;div class=&quot;post-content&quot;&gt;&lt;p&gt;Lately, a lot of developers are shedding the weight of database driven sites for simple projects like blogs and static websites.  I&amp;#39;ve really been enjoying &lt;a href=&quot;http://docpad.org/&quot; title=&quot;Docpad&quot;&gt;Docpad&lt;/a&gt;.  It&amp;#39;s built on top of node and is a really simple and clean way to generate a static website.&lt;/p&gt;
+&lt;p&gt;Docpad is similar to &lt;a href=&quot;http://octopress.org/&quot; title=&quot;Octopress&quot;&gt;Octopress&lt;/a&gt; or &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; in that it allows you to write posts/pages in actual files, then run a build process to compile your site into a single static folder.&lt;/p&gt;
+&lt;h3&gt;Why Static Websites?&lt;/h3&gt;
+&lt;p&gt;Sometimes, you just don&amp;#39;t need anything more than that.  If you don&amp;#39;t require a database, it&amp;#39;s much easier and faster to generate the static pages and let the web server do the work.&lt;/p&gt;
+&lt;p&gt;You get to take advantage of caching, no database connection, security and simplicity.&lt;/p&gt;
+&lt;p&gt;Not to mention, not ever having to use the Wordpress post editor again.  Writing markdown in your text editor!  Heyoo...&lt;/p&gt;
+&lt;h3&gt;Docpad&amp;#39;s Build Process&lt;/h3&gt;
+&lt;p&gt;Docpad builds a publish folder called &lt;strong&gt;&amp;#39;out&amp;#39;&lt;/strong&gt;.  That folder is a well organized structure of all your compiled assets in a public root level folder.&lt;/p&gt;
+&lt;p&gt;It takes care of your templating, your partials, compiles your &lt;a href=&quot;http://sass-lang.com/&quot; title=&quot;Sass&quot;&gt;Sass&lt;/a&gt;, &lt;a href=&quot;http://jade-lang.com/&quot; title=&quot;Jade Templating&quot;&gt;Jade&lt;/a&gt;, &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; or whatever you decided to use, and builds it into standard HTML, CSS and Javascript.&lt;/p&gt;
+&lt;h3&gt;Deploying with Docpad&lt;/h3&gt;
+&lt;p&gt;Docpad offers a few different deployment options.  I like the &lt;a href=&quot;http://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;Github Pages&lt;/a&gt; option for a few reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keeps your entire working and public project in Github&lt;/li&gt;
+&lt;li&gt;Fast, reliable and fully managed servers&lt;/li&gt;
+&lt;li&gt;Versioned, forkable, trackable repos&lt;/li&gt;
+&lt;li&gt;Oh yeah, and it&amp;#39;s free!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;Github Pages&lt;/a&gt; is well covered on their site.  But there&amp;#39;s a few things you need to know before you decide to host there.&lt;/p&gt;
+&lt;h3&gt;User/Org Pages or Project Pages&lt;/h3&gt;
+&lt;p&gt;You can host your site in one of two ways.  As a user/org or as a project.  Its pretty self-explanatory.  If you want your Pages to be general for your identity.  &lt;strong&gt;(Think, root public folder...)&lt;/strong&gt;  You probably want to use the user/organization.&lt;/p&gt;
+&lt;p&gt;If your site is related to a specific project instead. Use the Project Pages.&lt;/p&gt;
+&lt;h3&gt;What&amp;#39;s The Difference?&lt;/h3&gt;
+&lt;p&gt;For the viewer, the only difference is the URL.  Your user/org page URL will be &lt;strong&gt;&lt;em&gt;username&lt;/em&gt;.github.io&lt;/strong&gt;  If you set up a project page, the URL will be &lt;strong&gt;&lt;em&gt;username&lt;/em&gt;.github.io/&lt;em&gt;project&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Technically, there&amp;#39;s a couple of differences.  User/org pages live in a separate repo, while a project page will only be a separate branch in your project repo.&lt;/p&gt;
+&lt;p&gt;Github will automatically make any Github Pages Repo &lt;em&gt;Public&lt;/em&gt;, so if for any reason your project is &lt;em&gt;Private&lt;/em&gt;, you probably want that separate repo for your site.&lt;/p&gt;
+&lt;p&gt;Project pages are automatically recognized by having a branch called &lt;strong&gt;gh-pages&lt;/strong&gt; in your repo.&lt;/p&gt;
+&lt;p&gt;However, user/org pages live in the master branch of a repo with the naming convention: &lt;strong&gt;&lt;em&gt;username&lt;/em&gt;.github.io&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Once you&amp;#39;ve decided which one you&amp;#39;re going to go with.  Its time to get started.&lt;/p&gt;
+&lt;h3&gt;Install the Github Pages Deploy plugin&lt;/h3&gt;
+&lt;p&gt;In your terminal, navigate to your Docpad site folder and install the plugin:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;$ docpad install ghpages&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You&amp;#39;ll get the npm install reporting:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;info: The action completed successfully
+info: Shutting down... cya next time!&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can check out the source on the &lt;a href=&quot;https://github.com/docpad/docpad-plugin-ghpages&quot; title=&quot;Docpad Github Pages plugin&quot;&gt;Docpad Github Pages Plugin Page&lt;/a&gt;.  But don&amp;#39;t be deterred by the fact that it says it doesn&amp;#39;t yet support user/org pages.  Because it does.  Out of the box.&lt;/p&gt;
+&lt;h3&gt;Setting up a Project Page&lt;/h3&gt;
+&lt;p&gt;If you want to host it as a project page.  You&amp;#39;re literally done.  Just type:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;$ docpad deploy-ghpages --env static&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And it will read your remote.  And push to a new gh-pages branch!  Go to &lt;strong&gt;&lt;em&gt;username&lt;/em&gt;.github.io/&lt;em&gt;project&lt;/em&gt;&lt;/strong&gt; and soak it in.&lt;/p&gt;
+&lt;h3&gt;Setting up a User/Org Page&lt;/h3&gt;
+&lt;p&gt;If you&amp;#39;re going to set up a separate repo, with a user/org page.  Go to your Github account and create a new repo called &lt;strong&gt;&lt;em&gt;username&lt;/em&gt;.github.io&lt;/strong&gt;.  (yes, your &lt;em&gt;username&lt;/em&gt;, not the actual string)&lt;/p&gt;
+&lt;p&gt;After you&amp;#39;ve created the repo.  Open your local repo in github and add the new remote location:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;$ git remote add pages git@example.com:my_project.git&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I like to call that repo pages.  Assuming you have your SSH Keys set up correctly, you should be fine for pushing there automatically.&lt;/p&gt;
+&lt;p&gt;Now you&amp;#39;re going to edit your /docpad.coffee config file.  If you don&amp;#39;t have a &lt;strong&gt;plugins&lt;/strong&gt; section, add it.  Then put your ghpages config below it:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-coffeescript&quot;&gt;plugins:
+  ghpages:
+    deployBranch: &amp;#39;master&amp;#39;
+    deployRemote: &amp;#39;pages&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This tells the gh-pages plugin to push to your remote called &lt;strong&gt;&amp;#39;pages&amp;#39;&lt;/strong&gt; and do it directly to the branch called &lt;strong&gt;&amp;#39;master&amp;#39;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Give it a shot!&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;$ docpad deploy-ghpages --env static&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It should automatically set up your &amp;#39;static&amp;#39; environment and push your code to your &amp;#39;pages&amp;#39; repo.&lt;/p&gt;
+&lt;p&gt;Don&amp;#39;t forget to commit all your changes to your &amp;#39;working&amp;#39; repo as well though.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-bash&quot;&gt;$ git push origin master&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;That&amp;#39;s it.  You now have a full deployment process to Github Pages on your Docpad site.  Let me know if you have any questions...&lt;/p&gt;
+&lt;/div&gt;&lt;/article&gt;&lt;aside id=&quot;flyoutCancel&quot; class=&quot;flyout-cancel&quot;&gt;&lt;/aside&gt;&lt;aside id=&quot;recentList&quot; class=&quot;flyout-list&quot;&gt;&lt;h3&gt;Recent Posts&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/two-stage-css-buttons&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Two Stage - CSS Buttons&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/github-pages-with-docpad&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Deploying to Github Pages With Docpad&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/preparing-your-website-for-deployment&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Preparing Your Website For Deployment&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/styles-seed-explained&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Styles Seed Explained&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;&lt;aside id=&quot;relatedList&quot; class=&quot;flyout-list&quot;&gt;&lt;h3&gt;Related Posts&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/preparing-your-website-for-deployment&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Preparing Your Website For Deployment&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;&lt;footer&gt;&lt;p&gt;If you like this post, please follow me on Twitter &amp;nbsp;&lt;a href=&quot;https://twitter.com/seethroughtrees&quot; title=&quot;SeeThroughTrees on Twitter&quot;&gt;@SeeThroughTrees&lt;/a&gt;&lt;/p&gt;&lt;section id=&quot;related&quot;&gt;&lt;h3&gt;Related Posts&lt;/h3&gt;&lt;nav class=&quot;linklist&quot;&gt;&lt;li&gt;&lt;span&gt;Fri Sep 20 2013&lt;/span&gt; &amp;raquo;&amp;nbsp;&lt;a href=&quot;/posts/preparing-your-website-for-deployment&quot;&gt;Preparing Your Website For Deployment&lt;/a&gt;&lt;/li&gt;&lt;/nav&gt;&lt;/section&gt;&lt;/footer&gt;&lt;hr/&gt;&lt;div id=&quot;disqus-container&quot;&gt;&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+	(function(){
+		window.disqus_shortname = 'seethroughtrees';
+		window.disqus_developer = '1';
+		window.disqus_url = 'http://seethroughtrees.github.io/posts/github-pages-with-docpad';
+		window.disqus_identifier = 'posts-github-pages-with-docpad';
+		window.disqus_title = 'Deploying to Github Pages With Docpad';
+		if ( window.DISQUS ) {
+			return DISQUS.reset({
+				reload: true,
+				config: function () {
+					this.page.identifier = window.disqus_identifier;
+					this.page.url = window.disqus_url;
+					this.page.title = window.disqus_title;
+				}
+			});
+		}
+		else {
+		  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		}
+	})();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;http://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;a href=&quot;http://disqus.com&quot; class=&quot;dsq-brlink&quot;&gt;comments powered by &lt;span class=&quot;logo-disqus&quot;&gt;Disqus&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/section&gt;&lt;hr&gt;&lt;footer class=&quot;main-footer&quot;&gt;&lt;div&gt;© SeeThroughTrees&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;!-- Scripts--&gt;&lt;script &gt;var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-44037173-1']);
+_gaq.push(['_trackPageview']);
+(function(){
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/vendor/prism.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/vendor/jquery.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/scripts/script.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</content>
+    </entry>
+  
+    <entry>
+      <title>Preparing Your Website For Deployment</title>
+      <link href="http://seethroughtrees.github.io//posts/preparing-your-website-for-deployment"/>
+      <updated>2013-09-21T00:00:18.000Z</updated>
+      <id>http://seethroughtrees.github.io//posts/preparing-your-website-for-deployment</id>
+      <content type="html">&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;!-- Meta--&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;&lt;title&gt;Preparing Your Website For Deployment | See Through Trees Blog&lt;/title&gt;&lt;meta name=&quot;description&quot; content=&quot;Tech Blog, and random musings.&quot;&gt;&lt;meta name=&quot;keywords&quot; content=&quot;developer, javascript, oocss, front-end, web-developer, angularjs, dev-blog&quot;&gt;&lt;meta name=&quot;author&quot; content=&quot;SeeThroughTrees&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.53.4&quot; /&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, user-scalable=no&quot;&gt;&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;//cloud.typography.com/6822852/797262/css/fonts.css&quot;&gt;&lt;!-- Icons--&gt;&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;ico/apple-touch-icon.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;ico/apple-touch-icon-57x57.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;ico/apple-touch-icon-72x72.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;ico/apple-touch-icon-114x114.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;ico/apple-touch-icon-144x144.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;ico/apple-touch-icon-60x60.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;ico/apple-touch-icon-120x120.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;ico/apple-touch-icon-76x76.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;ico/apple-touch-icon-152x152.png&quot;&gt;&lt;!--[if lt IE 9]&gt;&lt;script async src=&quot;//html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;&lt;!-- Styles--&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/vendor/astro.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/styles/global.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/vendor/icomoon.css&quot; /&gt;&lt;/head&gt;&lt;body&gt;&lt;ul class=&quot;social-nav&quot;&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/&quot; class=&quot;icon-home&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/seeThroughTrees&quot; class=&quot;icon-twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/seethroughtrees/&quot; class=&quot;icon-github&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;header class=&quot;main-header&quot;&gt;&lt;nav class=&quot;nav-wrap&quot;&gt;&lt;span class=&quot;book-ends&quot;&gt;{&lt;/span&gt;&lt;a href=&quot;http://seethroughtrees.github.io/&quot; class=&quot;logo&quot;&gt;See Through Trees&lt;/a&gt;&lt;span class=&quot;book-ends&quot;&gt;}&lt;/span&gt;&lt;ul class=&quot;nav&quot;&gt;&lt;li&gt;&lt;a id=&quot;recentBtn&quot; href=&quot;#&quot;&gt;Recent&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;relatedBtn&quot; href=&quot;#&quot;&gt;Related&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;&lt;/header&gt;&lt;div class=&quot;container&quot;&gt;&lt;hr&gt;&lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;&lt;h1&gt;Preparing Your Website For Deployment&lt;/h1&gt;&lt;span class=&quot;post-date&quot;&gt;Fri Sep 20 2013:&lt;/span&gt;&lt;div class=&quot;post-content&quot;&gt;&lt;p&gt;One of the practices that&amp;#39;s really been improving in the javascript/css/html world is &lt;strong&gt;build processes&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If you&amp;#39;re on the beginning side of web development, they can be an intimidating thing.  But if you focus on understanding what it is first.  It becomes a lot easier to implement.&lt;/p&gt;
+&lt;h3&gt;What is a build process&lt;/h3&gt;
+&lt;p&gt;The easiest way to think of a build process is -- running an action on your files to help &lt;strong&gt;prepare them for production&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We use lots of shortcuts, and libraries, and tricks in our development, and web servers don&amp;#39;t need to see them.  And in a lot of cases, won&amp;#39;t know what to do with the files anyway.&lt;/p&gt;
+&lt;p&gt;But developing is so much better with separation, shortcuts and organization, we can&amp;#39;t let THAT stop us from using it.&lt;/p&gt;
+&lt;p&gt;So instead.  We configure a helper to take the files, lint, compress, concatenate and copy the files into a pretty and organized folder full of html, css and javascript.  Exactly how a web server wants to read its&amp;#39; files.&lt;/p&gt;
+&lt;h3&gt;Structure&lt;/h3&gt;
+&lt;p&gt;Using a build process will allow you to separate your &amp;#39;working folder&amp;#39;, where you do your coding, from your &amp;#39;production folder&amp;#39; that the web server will read.&lt;/p&gt;
+&lt;p&gt;Some common naming conventions for the two folders:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;src/out&lt;/li&gt;
+&lt;li&gt;app/dist&lt;/li&gt;
+&lt;li&gt;working/build&lt;/li&gt;
+&lt;li&gt;pre/public&lt;/li&gt;
+&lt;li&gt;etc...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They can have any names, it&amp;#39;s just important for them to be obvious.&lt;/p&gt;
+&lt;h3&gt;Features&lt;/h3&gt;
+&lt;p&gt;Build processes can do a lot of things.  And any time its automated, you&amp;#39;re decreasing your chance of making a mistake.  And giving yourself more time to write code!&lt;/p&gt;
+&lt;h4&gt;Compiling&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Write your code in &lt;a href=&quot;http://sass-lang.com/&quot; title=&quot;Sass&quot;&gt;SASS&lt;/a&gt;, &lt;a href=&quot;http://coffeescript.org/&quot; title=&quot;CoffeeScript&quot;&gt;CoffeeScript&lt;/a&gt;, &lt;a href=&quot;http://jade-lang.com/&quot; title=&quot;Jade Templating&quot;&gt;Jade&lt;/a&gt;, or anything you like.&lt;/li&gt;
+&lt;li&gt;You can easily configure your build script to compile that code into standard html, css and javascript&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Compressing&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Running your code through &amp;#39;minifiers&amp;#39;, will take those easy to read variables, and those beautiful line breaks, and squash them into a single &amp;#39;ugly&amp;#39; line.&lt;/li&gt;
+&lt;li&gt;Why?  Filesize baby.  Cutting out those extra letters is less for a server to think about&lt;/li&gt;
+&lt;li&gt;There&amp;#39;s no actual benefit for a computer to read them pretty.  They just don&amp;#39;t care.  Better to have it load as quickly as possible instead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Concatenating&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Likewise, while its ideal to separate your CSS and Javascript files into smaller pieces so you
+can use them more easily.  Again, your server just doesn&amp;#39;t care&lt;/li&gt;
+&lt;li&gt;Concatenating will combine your files into a single file of that type, and only have to load it once.&lt;/li&gt;
+&lt;li&gt;This is way better for performance as limiting http requests is always a good thing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Copying&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Move your compressed and concatenated files into a folder structure that makes more sense
+for URLs instead of what works best for you&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Linting&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;These scripts can scan your code for common errors, missed punctuation, spelling etc...&lt;/li&gt;
+&lt;li&gt;Trust me, now matter how good a developer is, &lt;strong&gt;they will make mistakes!&lt;/strong&gt;  Linters, always catch them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Tools&lt;/h3&gt;
+&lt;p&gt;While you can write these build scripts yourself.  If you&amp;#39;re reading this article, you probably
+need some practice in using them first.  Here&amp;#39;s some &lt;strong&gt;build script libraries&lt;/strong&gt; to get you started.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://gruntjs.com/&quot; title=&quot;GruntJS&quot;&gt;GruntJS&lt;/a&gt; -- An awesome task manager in javascript&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://brunch.io/&quot; title=&quot;Brunch.io&quot;&gt;Brunch&lt;/a&gt; -- An equally awesome collection of build processes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://incident57.com/codekit/index.php&quot; title=&quot;Codekit&quot;&gt;Codekit&lt;/a&gt; -- An incredible GUI for build processes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And lots of site building frameworks have it built in!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://yeoman.io/&quot; title=&quot;Yeoman&quot;&gt;Yeoman&lt;/a&gt; -- A workflow for building modern apps&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://docpad.org/&quot; title=&quot;Docpad&quot;&gt;Docpad&lt;/a&gt; -- A framework for building static sites (That&amp;#39;s what I use here)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://guides.rubyonrails.org/asset_pipeline.html&quot; title=&quot;Asset Pipeline for Rails&quot;&gt;Asset Pipeline&lt;/a&gt; -- Rails build process for Javascript/CSS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://octopress.org/&quot; title=&quot;Octopress&quot;&gt;Octopress&lt;/a&gt; -- A cool static site generator that works with &lt;a href=&quot;http://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;Github Pages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&amp;#39;s a lot more out there.  But I&amp;#39;ve personally used, and can vouch that these
+ones are great.  But definitely explore everything out there!&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;It might be a hurdle to get into using a build system.  But once you do.  Trust me.
+You will never build a site without one again.&lt;/p&gt;
+&lt;h5&gt;Helpful Links&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://css-tricks.com/deployment/&quot; title=&quot;CSS Tricks&quot;&gt;Website Deployment: Let us count the ways!&lt;/a&gt; -- When you have that deployment folder
+locked down.  This is a great article on what to do next&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ontwik.com/javascript/setting-up-a-build-process-for-javascript-css-files-by-addy-osmani/&quot; title=&quot;Setting Up A Build Process For JavaScript &amp;amp; CSS Files&quot;&gt;Setting Up A Build Process For JavaScript &amp;amp; CSS Files by Addy Osmani&lt;/a&gt; -- A great screencast that really got me caught up with Build Processes.  (He uses &lt;a href=&quot;http://ant.apache.org/&quot; title=&quot;Apache Ant&quot;&gt;Ant&lt;/a&gt;.  I wouldn&amp;#39;t advise it for your first build process, but it has lots of good info)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/article&gt;&lt;aside id=&quot;flyoutCancel&quot; class=&quot;flyout-cancel&quot;&gt;&lt;/aside&gt;&lt;aside id=&quot;recentList&quot; class=&quot;flyout-list&quot;&gt;&lt;h3&gt;Recent Posts&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/two-stage-css-buttons&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Two Stage - CSS Buttons&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/github-pages-with-docpad&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Deploying to Github Pages With Docpad&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/preparing-your-website-for-deployment&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Preparing Your Website For Deployment&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/styles-seed-explained&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Styles Seed Explained&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;&lt;aside id=&quot;relatedList&quot; class=&quot;flyout-list&quot;&gt;&lt;h3&gt;Related Posts&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/github-pages-with-docpad&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Deploying to Github Pages With Docpad&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/styles-seed-explained&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Styles Seed Explained&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;&lt;footer&gt;&lt;p&gt;If you like this post, please follow me on Twitter &amp;nbsp;&lt;a href=&quot;https://twitter.com/seethroughtrees&quot; title=&quot;SeeThroughTrees on Twitter&quot;&gt;@SeeThroughTrees&lt;/a&gt;&lt;/p&gt;&lt;section id=&quot;related&quot;&gt;&lt;h3&gt;Related Posts&lt;/h3&gt;&lt;nav class=&quot;linklist&quot;&gt;&lt;li&gt;&lt;span&gt;Thu Sep 26 2013&lt;/span&gt; &amp;raquo;&amp;nbsp;&lt;a href=&quot;/posts/github-pages-with-docpad&quot;&gt;Deploying to Github Pages With Docpad&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Sun Sep 15 2013&lt;/span&gt; &amp;raquo;&amp;nbsp;&lt;a href=&quot;/posts/styles-seed-explained&quot;&gt;Styles Seed Explained&lt;/a&gt;&lt;/li&gt;&lt;/nav&gt;&lt;/section&gt;&lt;/footer&gt;&lt;hr/&gt;&lt;div id=&quot;disqus-container&quot;&gt;&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+	(function(){
+		window.disqus_shortname = 'seethroughtrees';
+		window.disqus_developer = '1';
+		window.disqus_url = 'http://seethroughtrees.github.io/posts/preparing-your-website-for-deployment';
+		window.disqus_identifier = 'posts-preparing-your-website-for-deployment';
+		window.disqus_title = 'Preparing Your Website For Deployment';
+		if ( window.DISQUS ) {
+			return DISQUS.reset({
+				reload: true,
+				config: function () {
+					this.page.identifier = window.disqus_identifier;
+					this.page.url = window.disqus_url;
+					this.page.title = window.disqus_title;
+				}
+			});
+		}
+		else {
+		  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		}
+	})();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;http://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;a href=&quot;http://disqus.com&quot; class=&quot;dsq-brlink&quot;&gt;comments powered by &lt;span class=&quot;logo-disqus&quot;&gt;Disqus&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/section&gt;&lt;hr&gt;&lt;footer class=&quot;main-footer&quot;&gt;&lt;div&gt;© SeeThroughTrees&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;!-- Scripts--&gt;&lt;script &gt;var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-44037173-1']);
+_gaq.push(['_trackPageview']);
+(function(){
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/vendor/prism.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/vendor/jquery.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/scripts/script.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</content>
+    </entry>
+  
+    <entry>
+      <title>Styles Seed Explained</title>
+      <link href="http://seethroughtrees.github.io//posts/styles-seed-explained"/>
+      <updated>2013-09-16T00:00:18.000Z</updated>
+      <id>http://seethroughtrees.github.io//posts/styles-seed-explained</id>
+      <content type="html">&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;!-- Meta--&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;&lt;title&gt;Styles Seed Explained | See Through Trees Blog&lt;/title&gt;&lt;meta name=&quot;description&quot; content=&quot;Tech Blog, and random musings.&quot;&gt;&lt;meta name=&quot;keywords&quot; content=&quot;developer, javascript, oocss, front-end, web-developer, angularjs, dev-blog&quot;&gt;&lt;meta name=&quot;author&quot; content=&quot;SeeThroughTrees&quot;&gt;&lt;meta name=&quot;generator&quot; content=&quot;DocPad v6.53.4&quot; /&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, user-scalable=no&quot;&gt;&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;//cloud.typography.com/6822852/797262/css/fonts.css&quot;&gt;&lt;!-- Icons--&gt;&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;ico/apple-touch-icon.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;ico/apple-touch-icon-57x57.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;ico/apple-touch-icon-72x72.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;ico/apple-touch-icon-114x114.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;ico/apple-touch-icon-144x144.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;ico/apple-touch-icon-60x60.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;ico/apple-touch-icon-120x120.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;ico/apple-touch-icon-76x76.png&quot;&gt;&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;ico/apple-touch-icon-152x152.png&quot;&gt;&lt;!--[if lt IE 9]&gt;&lt;script async src=&quot;//html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;&lt;!-- Styles--&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/vendor/astro.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/styles/global.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seethroughtrees.github.io/vendor/icomoon.css&quot; /&gt;&lt;/head&gt;&lt;body&gt;&lt;ul class=&quot;social-nav&quot;&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/&quot; class=&quot;icon-home&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://twitter.com/seeThroughTrees&quot; class=&quot;icon-twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://github.com/seethroughtrees/&quot; class=&quot;icon-github&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;header class=&quot;main-header&quot;&gt;&lt;nav class=&quot;nav-wrap&quot;&gt;&lt;span class=&quot;book-ends&quot;&gt;{&lt;/span&gt;&lt;a href=&quot;http://seethroughtrees.github.io/&quot; class=&quot;logo&quot;&gt;See Through Trees&lt;/a&gt;&lt;span class=&quot;book-ends&quot;&gt;}&lt;/span&gt;&lt;ul class=&quot;nav&quot;&gt;&lt;li&gt;&lt;a id=&quot;recentBtn&quot; href=&quot;#&quot;&gt;Recent&lt;/a&gt;&lt;/li&gt;&lt;li&gt;|&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;relatedBtn&quot; href=&quot;#&quot;&gt;Related&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;&lt;/header&gt;&lt;div class=&quot;container&quot;&gt;&lt;hr&gt;&lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;&lt;h1&gt;Styles Seed Explained&lt;/h1&gt;&lt;span class=&quot;post-date&quot;&gt;Sun Sep 15 2013:&lt;/span&gt;&lt;div class=&quot;post-content&quot;&gt;&lt;p&gt;Whether I&amp;#39;m doing tests, hackathons or full-fledged projects, I like to set up my css structure in a way that makes sense to me.  It allows me to quickly understand and edit my styles at any time.&lt;/p&gt;
+&lt;p&gt;After a lot of repeating boilerplate, I decided to create &lt;a href=&quot;https://github.com/seethroughtrees/styles-seed&quot; title=&quot;SeeThroughTrees - Styles Seed&quot;&gt;Styles Seed&lt;/a&gt;.  Although I usually write in &lt;a href=&quot;http://sass-lang.com/&quot; title=&quot;SASS&quot;&gt;SASS&lt;/a&gt;, I also provide a version in &lt;a href=&quot;http://sass-lang.com/&quot; title=&quot;SASS&quot;&gt;SCSS&lt;/a&gt;.  If you prefer &lt;a href=&quot;http://learnboost.github.io/stylus/&quot; title=&quot;Stylus&quot;&gt;Stylus&lt;/a&gt;, or even &lt;a href=&quot;http://lesscss.org/&quot; title=&quot;LESS&quot;&gt;LESS&lt;/a&gt;, its easy to convert.  When I have the time, I&amp;#39;ll make a &lt;a href=&quot;/posts/preparing-your-website-for-deployment&quot; title=&quot;Build Processes&quot;&gt;build process&lt;/a&gt; to do it for me.&lt;/p&gt;
+&lt;p&gt;Styles Seed is inspired by &lt;a href=&quot;http://smacss.com/&quot; title=&quot;SMACSS&quot;&gt;SMACSS&lt;/a&gt;, Nicole Sullivan&amp;#39;s &lt;a href=&quot;https://github.com/stubbornella/oocss&quot; title=&quot;OOCSS&quot;&gt;OOCSS&lt;/a&gt;, and way too many years of building CSS layouts.&lt;/p&gt;
+&lt;h3&gt;Structure&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;styles
+|
+|---lib.scss                 // for reusing mixins and vars
+|---mixins.scss              // custom mixins
+|---vars.scss                // localized variables
+|
+|---global.scss              // the manifest file
+|
+|---&amp;gt; global            // all modular css should have a home here
+|   |---base.scss
+|   |---buttons.scss
+|   |---icons.scss
+|   |---layout.scss
+|   |---modules.scss
+|   |---state.scss
+|   └---typography.scss
+|
+|---&amp;gt; vendor            // for storing vendor/library files
+|
+|---&amp;gt; modules           // for reusable module css
+|   |---footer.scss
+|   |---header.scss
+|   |---forms.scss
+|
+|---static.scss              // for css that will be loaded separately
+|
+|---ie.scss                  // for that super fun part of writing ie only css&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Global File&lt;/h3&gt;
+&lt;p&gt;I run all of my reusable code through a file called &lt;strong&gt;global.scss&lt;/strong&gt;.  This is my manifest file where I control all of my importing.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Don&amp;#39;t forget, although @import in live CSS is bad, using it in a precompiled language like SASS works perfect&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-scss&quot;&gt;// my CSS reset of choice
+@import &amp;quot;vendor/normalize.scss&amp;quot;;
+
+// reused in all separate stylesheets
+@import &amp;quot;lib&amp;quot;;
+
+// modular css
+@import &amp;quot;global/base&amp;quot;;
+@import &amp;quot;global/layout&amp;quot;;
+@import &amp;quot;global/buttons&amp;quot;;
+@import &amp;quot;global/icons&amp;quot;;
+@import &amp;quot;global/typography&amp;quot;;
+@import &amp;quot;global/state&amp;quot;;
+
+// less repeatable rules go here
+@import &amp;quot;global/modules&amp;quot;;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Global.scss&lt;/strong&gt; is my main switchboard.  I try to keep &lt;strong&gt;95% of my code as reusable&lt;/strong&gt; so it all goes in here.  It gets compiled into a single &lt;strong&gt;global.css&lt;/strong&gt; file that I load right into my html.  Its linted, compressed, and ready to for production.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-markup&quot;&gt;&amp;lt;link  rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;/styles/global.css&amp;quot; /&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Inside it, I import:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;normalize.scss&lt;/strong&gt; -- My CSS reset of choice.  There are a few resets and variants out there.  But &lt;a href=&quot;http://necolas.github.io/normalize.css/&quot; title=&quot;Normalize CSS&quot;&gt;Normalize, by Nicolas Galagher&lt;/a&gt; is great.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;lib folder&lt;/strong&gt; -- imports 3 things.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;My mixin library &lt;a href=&quot;http://bourbon.io/&quot; title=&quot;Bourbon.io&quot;&gt;bourbon&lt;/a&gt; or &lt;a href=&quot;http://compass-style.org/&quot; title=&quot;Compass&quot;&gt;compass&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vars.scss&lt;/strong&gt; This is where I store all the variables related to my project&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;mixins.scss&lt;/strong&gt; a library of my custom mixins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Its important to note that all of the files in this folder are library files.  Meaning they don&amp;#39;t actually create any CSS.  They are a list of variables and templates that can be used when creating your CSS.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I keep this folder separate because any &lt;em&gt;single-standing&lt;/em&gt; SCSS files that I want to use later, can also import this library, without me worrying about duplicating CSS.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SMACSS Files&lt;/strong&gt; -- All my basic &lt;a href=&quot;http://smacss.com/&quot; title=&quot;SMACSS&quot;&gt;SMACSS&lt;/a&gt; files go here.  They&amp;#39;re simple and straight forward.  These cover most of the site&amp;#39;s styles.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Modules&lt;/strong&gt; -- I do separate out my modules.  I know this isn&amp;#39;t standard SMACSS.  But I like to because it just makes things easier to find.  Its where I put things like &lt;strong&gt;header.scss&lt;/strong&gt;, &lt;strong&gt;footer.scss&lt;/strong&gt;, &lt;strong&gt;nav.scss&lt;/strong&gt; etc...&lt;/p&gt;
+&lt;h3&gt;No Shame&lt;/h3&gt;
+&lt;p&gt;I admit it.  I do like the idea of a shame folder.  I had always used a temp.scss file for quick edits that needed to be moved later.  Before there was a clever name for it.&lt;/p&gt;
+&lt;p&gt;But one of the real advantages of being comfortable with this structure is I no longer need to think about it.  I can place my code in the appropriate file just as fast as I can put them in a blame file.&lt;/p&gt;
+&lt;/div&gt;&lt;/article&gt;&lt;aside id=&quot;flyoutCancel&quot; class=&quot;flyout-cancel&quot;&gt;&lt;/aside&gt;&lt;aside id=&quot;recentList&quot; class=&quot;flyout-list&quot;&gt;&lt;h3&gt;Recent Posts&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/two-stage-css-buttons&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Two Stage - CSS Buttons&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/github-pages-with-docpad&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Deploying to Github Pages With Docpad&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/preparing-your-website-for-deployment&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Preparing Your Website For Deployment&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/styles-seed-explained&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Styles Seed Explained&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;&lt;aside id=&quot;relatedList&quot; class=&quot;flyout-list&quot;&gt;&lt;h3&gt;Related Posts&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/preparing-your-website-for-deployment&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Preparing Your Website For Deployment&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://seethroughtrees.github.io/posts/two-stage-css-buttons&quot;&gt;&lt;i class=&quot;icon-quill&quot;&gt;&lt;/i&gt;Two Stage - CSS Buttons&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/aside&gt;&lt;footer&gt;&lt;p&gt;If you like this post, please follow me on Twitter &amp;nbsp;&lt;a href=&quot;https://twitter.com/seethroughtrees&quot; title=&quot;SeeThroughTrees on Twitter&quot;&gt;@SeeThroughTrees&lt;/a&gt;&lt;/p&gt;&lt;section id=&quot;related&quot;&gt;&lt;h3&gt;Related Posts&lt;/h3&gt;&lt;nav class=&quot;linklist&quot;&gt;&lt;li&gt;&lt;span&gt;Fri Sep 20 2013&lt;/span&gt; &amp;raquo;&amp;nbsp;&lt;a href=&quot;/posts/preparing-your-website-for-deployment&quot;&gt;Preparing Your Website For Deployment&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;Sun Oct 20 2013&lt;/span&gt; &amp;raquo;&amp;nbsp;&lt;a href=&quot;/posts/two-stage-css-buttons&quot;&gt;Two Stage - CSS Buttons&lt;/a&gt;&lt;/li&gt;&lt;/nav&gt;&lt;/section&gt;&lt;/footer&gt;&lt;hr/&gt;&lt;div id=&quot;disqus-container&quot;&gt;&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+	(function(){
+		window.disqus_shortname = 'seethroughtrees';
+		window.disqus_developer = '1';
+		window.disqus_url = 'http://seethroughtrees.github.io/posts/styles-seed-explained';
+		window.disqus_identifier = 'posts-styles-seed-explained';
+		window.disqus_title = 'Styles Seed Explained';
+		if ( window.DISQUS ) {
+			return DISQUS.reset({
+				reload: true,
+				config: function () {
+					this.page.identifier = window.disqus_identifier;
+					this.page.url = window.disqus_url;
+					this.page.title = window.disqus_title;
+				}
+			});
+		}
+		else {
+		  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		}
+	})();
+&lt;/script&gt;
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;http://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+&lt;a href=&quot;http://disqus.com&quot; class=&quot;dsq-brlink&quot;&gt;comments powered by &lt;span class=&quot;logo-disqus&quot;&gt;Disqus&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/section&gt;&lt;hr&gt;&lt;footer class=&quot;main-footer&quot;&gt;&lt;div&gt;© SeeThroughTrees&lt;/div&gt;&lt;/footer&gt;&lt;/div&gt;&lt;!-- Scripts--&gt;&lt;script &gt;var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-44037173-1']);
+_gaq.push(['_trackPageview']);
+(function(){
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/vendor/prism.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/vendor/jquery.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seethroughtrees.github.io/scripts/script.js&quot;&gt;&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</content>
+    </entry>
+  
+</feed>

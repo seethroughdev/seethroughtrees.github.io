@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en"><head><!-- Meta--><meta charset="utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Preparing Your Website For Deployment | See Through Trees Blog</title><meta name="description" content="Tech Blog, and random musings."><meta name="keywords" content="developer, javascript, oocss, front-end, web-developer, angularjs, dev-blog"><meta name="author" content="SeeThroughTrees"><meta name="generator" content="DocPad v6.53.4" /><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="stylesheet" href="//cloud.typography.com/6822852/797262/css/fonts.css"><!-- Icons--><link rel="apple-touch-icon" href="ico/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="ico/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="114x114" href="ico/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="144x144" href="ico/apple-touch-icon-152x152.png"><!--[if lt IE 9]><script async src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!-- Styles--><link  rel="stylesheet" href="http://seethroughtrees.github.io/vendor/astro.css" /><link  rel="stylesheet" href="http://seethroughtrees.github.io/styles/global.css" /><link  rel="stylesheet" href="http://seethroughtrees.github.io/vendor/icomoon.css" /></head><body><ul class="social-nav"><li><a href="http://seethroughtrees.github.io/" class="icon-home"></a></li><li><a href="https://twitter.com/seeThroughTrees" class="icon-twitter"></a></li><li><a href="https://github.com/seethroughtrees/" class="icon-github"></a></li></ul><header class="main-header"><nav class="nav-wrap"><span class="book-ends">{</span><a href="http://seethroughtrees.github.io/" class="logo">See Through Trees</a><span class="book-ends">}</span><ul class="nav"><li><a id="recentBtn" href="#">Recent</a></li><li>|</li><li><a id="relatedBtn" href="#">Related</a></li></ul></nav></header><div class="container"><hr><section id="content" class="content"><article id="post" class="post"><h1>Preparing Your Website For Deployment</h1><span class="post-date">Fri Sep 20 2013:</span><div class="post-content"><p>One of the practices that&#39;s really been improving in the javascript/css/html world is <strong>build processes</strong>.</p>
+<p>If you&#39;re on the beginning side of web development, they can be an intimidating thing.  But if you focus on understanding what it is first.  It becomes a lot easier to implement.</p>
+<h3>What is a build process</h3>
+<p>The easiest way to think of a build process is -- running an action on your files to help <strong>prepare them for production</strong>.</p>
+<p>We use lots of shortcuts, and libraries, and tricks in our development, and web servers don&#39;t need to see them.  And in a lot of cases, won&#39;t know what to do with the files anyway.</p>
+<p>But developing is so much better with separation, shortcuts and organization, we can&#39;t let THAT stop us from using it.</p>
+<p>So instead.  We configure a helper to take the files, lint, compress, concatenate and copy the files into a pretty and organized folder full of html, css and javascript.  Exactly how a web server wants to read its&#39; files.</p>
+<h3>Structure</h3>
+<p>Using a build process will allow you to separate your &#39;working folder&#39;, where you do your coding, from your &#39;production folder&#39; that the web server will read.</p>
+<p>Some common naming conventions for the two folders:</p>
+<ul>
+<li>src/out</li>
+<li>app/dist</li>
+<li>working/build</li>
+<li>pre/public</li>
+<li>etc...</li>
+</ul>
+<p>They can have any names, it&#39;s just important for them to be obvious.</p>
+<h3>Features</h3>
+<p>Build processes can do a lot of things.  And any time its automated, you&#39;re decreasing your chance of making a mistake.  And giving yourself more time to write code!</p>
+<h4>Compiling</h4>
+<ul>
+<li>Write your code in <a href="http://sass-lang.com/" title="Sass">SASS</a>, <a href="http://coffeescript.org/" title="CoffeeScript">CoffeeScript</a>, <a href="http://jade-lang.com/" title="Jade Templating">Jade</a>, or anything you like.</li>
+<li>You can easily configure your build script to compile that code into standard html, css and javascript</li>
+</ul>
+<h4>Compressing</h4>
+<ul>
+<li>Running your code through &#39;minifiers&#39;, will take those easy to read variables, and those beautiful line breaks, and squash them into a single &#39;ugly&#39; line.</li>
+<li>Why?  Filesize baby.  Cutting out those extra letters is less for a server to think about</li>
+<li>There&#39;s no actual benefit for a computer to read them pretty.  They just don&#39;t care.  Better to have it load as quickly as possible instead.</li>
+</ul>
+<h4>Concatenating</h4>
+<ul>
+<li>Likewise, while its ideal to separate your CSS and Javascript files into smaller pieces so you
+can use them more easily.  Again, your server just doesn&#39;t care</li>
+<li>Concatenating will combine your files into a single file of that type, and only have to load it once.</li>
+<li>This is way better for performance as limiting http requests is always a good thing.</li>
+</ul>
+<h4>Copying</h4>
+<ul>
+<li>Move your compressed and concatenated files into a folder structure that makes more sense
+for URLs instead of what works best for you</li>
+</ul>
+<h4>Linting</h4>
+<ul>
+<li>These scripts can scan your code for common errors, missed punctuation, spelling etc...</li>
+<li>Trust me, now matter how good a developer is, <strong>they will make mistakes!</strong>  Linters, always catch them.</li>
+</ul>
+<h3>Tools</h3>
+<p>While you can write these build scripts yourself.  If you&#39;re reading this article, you probably
+need some practice in using them first.  Here&#39;s some <strong>build script libraries</strong> to get you started.</p>
+<ul>
+<li><a href="http://gruntjs.com/" title="GruntJS">GruntJS</a> -- An awesome task manager in javascript</li>
+<li><a href="http://brunch.io/" title="Brunch.io">Brunch</a> -- An equally awesome collection of build processes</li>
+<li><a href="http://incident57.com/codekit/index.php" title="Codekit">Codekit</a> -- An incredible GUI for build processes</li>
+</ul>
+<p>And lots of site building frameworks have it built in!</p>
+<ul>
+<li><a href="http://yeoman.io/" title="Yeoman">Yeoman</a> -- A workflow for building modern apps</li>
+<li><a href="http://docpad.org/" title="Docpad">Docpad</a> -- A framework for building static sites (That&#39;s what I use here)</li>
+<li><a href="http://guides.rubyonrails.org/asset_pipeline.html" title="Asset Pipeline for Rails">Asset Pipeline</a> -- Rails build process for Javascript/CSS</li>
+<li><a href="http://octopress.org/" title="Octopress">Octopress</a> -- A cool static site generator that works with <a href="http://pages.github.com/" title="Github Pages">Github Pages</a></li>
+</ul>
+<p>There&#39;s a lot more out there.  But I&#39;ve personally used, and can vouch that these
+ones are great.  But definitely explore everything out there!</p>
+<h3>Conclusion</h3>
+<p>It might be a hurdle to get into using a build system.  But once you do.  Trust me.
+You will never build a site without one again.</p>
+<h5>Helpful Links</h5>
+<ul>
+<li><a href="http://css-tricks.com/deployment/" title="CSS Tricks">Website Deployment: Let us count the ways!</a> -- When you have that deployment folder
+locked down.  This is a great article on what to do next</li>
+<li><a href="http://ontwik.com/javascript/setting-up-a-build-process-for-javascript-css-files-by-addy-osmani/" title="Setting Up A Build Process For JavaScript &amp; CSS Files">Setting Up A Build Process For JavaScript &amp; CSS Files by Addy Osmani</a> -- A great screencast that really got me caught up with Build Processes.  (He uses <a href="http://ant.apache.org/" title="Apache Ant">Ant</a>.  I wouldn&#39;t advise it for your first build process, but it has lots of good info)</li>
+</ul>
+</div></article><aside id="flyoutCancel" class="flyout-cancel"></aside><aside id="recentList" class="flyout-list"><h3>Recent Posts</h3><ul><li><a href="http://seethroughtrees.github.io/posts/two-stage-css-buttons"><i class="icon-quill"></i>Two Stage - CSS Buttons</a></li><li><a href="http://seethroughtrees.github.io/posts/github-pages-with-docpad"><i class="icon-quill"></i>Deploying to Github Pages With Docpad</a></li><li><a href="http://seethroughtrees.github.io/posts/preparing-your-website-for-deployment"><i class="icon-quill"></i>Preparing Your Website For Deployment</a></li><li><a href="http://seethroughtrees.github.io/posts/styles-seed-explained"><i class="icon-quill"></i>Styles Seed Explained</a></li></ul></aside><aside id="relatedList" class="flyout-list"><h3>Related Posts</h3><ul><li><a href="http://seethroughtrees.github.io/posts/github-pages-with-docpad"><i class="icon-quill"></i>Deploying to Github Pages With Docpad</a></li><li><a href="http://seethroughtrees.github.io/posts/styles-seed-explained"><i class="icon-quill"></i>Styles Seed Explained</a></li></ul></aside><footer><p>If you like this post, please follow me on Twitter &nbsp;<a href="https://twitter.com/seethroughtrees" title="SeeThroughTrees on Twitter">@SeeThroughTrees</a></p><section id="related"><h3>Related Posts</h3><nav class="linklist"><li><span>Thu Sep 26 2013</span> &raquo;&nbsp;<a href="/posts/github-pages-with-docpad">Deploying to Github Pages With Docpad</a></li><li><span>Sun Sep 15 2013</span> &raquo;&nbsp;<a href="/posts/styles-seed-explained">Styles Seed Explained</a></li></nav></section></footer><hr/><div id="disqus-container"><div id="disqus_thread"></div>
+<script>
+	(function(){
+		window.disqus_shortname = 'seethroughtrees';
+		window.disqus_developer = '1';
+		window.disqus_url = 'http://seethroughtrees.github.io/posts/preparing-your-website-for-deployment';
+		window.disqus_identifier = 'posts-preparing-your-website-for-deployment';
+		window.disqus_title = 'Preparing Your Website For Deployment';
+		if ( window.DISQUS ) {
+			return DISQUS.reset({
+				reload: true,
+				config: function () {
+					this.page.identifier = window.disqus_identifier;
+					this.page.url = window.disqus_url;
+					this.page.title = window.disqus_title;
+				}
+			});
+		}
+		else {
+		  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		}
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></div></section><hr><footer class="main-footer"><div>© SeeThroughTrees</div></footer></div><!-- Scripts--><script >var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-44037173-1']);
+_gaq.push(['_trackPageview']);
+(function(){
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script><script defer="defer"  src="http://seethroughtrees.github.io/vendor/prism.min.js"></script><script defer="defer"  src="http://seethroughtrees.github.io/vendor/jquery.js"></script><script defer="defer"  src="http://seethroughtrees.github.io/scripts/script.js"></script></body></html>

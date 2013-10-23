@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head><!-- Meta--><meta charset="utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Deploying to Github Pages With Docpad | See Through Trees Blog</title><meta name="description" content="Tech Blog, and random musings."><meta name="keywords" content="developer, javascript, oocss, front-end, web-developer, angularjs, dev-blog"><meta name="author" content="SeeThroughTrees"><meta name="generator" content="DocPad v6.53.4" /><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="stylesheet" href="//cloud.typography.com/6822852/797262/css/fonts.css"><!-- Icons--><link rel="apple-touch-icon" href="ico/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="ico/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="114x114" href="ico/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="144x144" href="ico/apple-touch-icon-152x152.png"><!--[if lt IE 9]><script async src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!-- Styles--><link  rel="stylesheet" href="http://seethroughtrees.github.io/vendor/astro.css" /><link  rel="stylesheet" href="http://seethroughtrees.github.io/styles/global.css" /><link  rel="stylesheet" href="http://seethroughtrees.github.io/vendor/icomoon.css" /></head><body><ul class="social-nav"><li><a href="http://seethroughtrees.github.io/" class="icon-home"></a></li><li><a href="https://twitter.com/seeThroughTrees" class="icon-twitter"></a></li><li><a href="https://github.com/seethroughtrees/" class="icon-github"></a></li></ul><header class="main-header"><nav class="nav-wrap"><span class="book-ends">{</span><a href="http://seethroughtrees.github.io/" class="logo">See Through Trees</a><span class="book-ends">}</span><ul class="nav"><li><a id="recentBtn" href="#">Recent</a></li><li>|</li><li><a id="relatedBtn" href="#">Related</a></li></ul></nav></header><div class="container"><hr><section id="content" class="content"><article id="post" class="post"><h1>Deploying to Github Pages With Docpad</h1><span class="post-date">Thu Sep 26 2013:</span><div class="post-content"><p>Lately, a lot of developers are shedding the weight of database driven sites for simple projects like blogs and static websites.  I&#39;ve really been enjoying <a href="http://docpad.org/" title="Docpad">Docpad</a>.  It&#39;s built on top of node and is a really simple and clean way to generate a static website.</p>
+<p>Docpad is similar to <a href="http://octopress.org/" title="Octopress">Octopress</a> or <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> in that it allows you to write posts/pages in actual files, then run a build process to compile your site into a single static folder.</p>
+<h3>Why Static Websites?</h3>
+<p>Sometimes, you just don&#39;t need anything more than that.  If you don&#39;t require a database, it&#39;s much easier and faster to generate the static pages and let the web server do the work.</p>
+<p>You get to take advantage of caching, no database connection, security and simplicity.</p>
+<p>Not to mention, not ever having to use the Wordpress post editor again.  Writing markdown in your text editor!  Heyoo...</p>
+<h3>Docpad&#39;s Build Process</h3>
+<p>Docpad builds a publish folder called <strong>&#39;out&#39;</strong>.  That folder is a well organized structure of all your compiled assets in a public root level folder.</p>
+<p>It takes care of your templating, your partials, compiles your <a href="http://sass-lang.com/" title="Sass">Sass</a>, <a href="http://jade-lang.com/" title="Jade Templating">Jade</a>, <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> or whatever you decided to use, and builds it into standard HTML, CSS and Javascript.</p>
+<h3>Deploying with Docpad</h3>
+<p>Docpad offers a few different deployment options.  I like the <a href="http://pages.github.com/" title="Github Pages">Github Pages</a> option for a few reasons:</p>
+<ul>
+<li>Keeps your entire working and public project in Github</li>
+<li>Fast, reliable and fully managed servers</li>
+<li>Versioned, forkable, trackable repos</li>
+<li>Oh yeah, and it&#39;s free!</li>
+</ul>
+<p><a href="http://pages.github.com/" title="Github Pages">Github Pages</a> is well covered on their site.  But there&#39;s a few things you need to know before you decide to host there.</p>
+<h3>User/Org Pages or Project Pages</h3>
+<p>You can host your site in one of two ways.  As a user/org or as a project.  Its pretty self-explanatory.  If you want your Pages to be general for your identity.  <strong>(Think, root public folder...)</strong>  You probably want to use the user/organization.</p>
+<p>If your site is related to a specific project instead. Use the Project Pages.</p>
+<h3>What&#39;s The Difference?</h3>
+<p>For the viewer, the only difference is the URL.  Your user/org page URL will be <strong><em>username</em>.github.io</strong>  If you set up a project page, the URL will be <strong><em>username</em>.github.io/<em>project</em></strong>.</p>
+<p>Technically, there&#39;s a couple of differences.  User/org pages live in a separate repo, while a project page will only be a separate branch in your project repo.</p>
+<p>Github will automatically make any Github Pages Repo <em>Public</em>, so if for any reason your project is <em>Private</em>, you probably want that separate repo for your site.</p>
+<p>Project pages are automatically recognized by having a branch called <strong>gh-pages</strong> in your repo.</p>
+<p>However, user/org pages live in the master branch of a repo with the naming convention: <strong><em>username</em>.github.io</strong></p>
+<p>Once you&#39;ve decided which one you&#39;re going to go with.  Its time to get started.</p>
+<h3>Install the Github Pages Deploy plugin</h3>
+<p>In your terminal, navigate to your Docpad site folder and install the plugin:</p>
+<pre><code class="lang-bash">$ docpad install ghpages</code></pre>
+<p>You&#39;ll get the npm install reporting:</p>
+<pre><code class="lang-bash">info: The action completed successfully
+info: Shutting down... cya next time!</code></pre>
+<p>You can check out the source on the <a href="https://github.com/docpad/docpad-plugin-ghpages" title="Docpad Github Pages plugin">Docpad Github Pages Plugin Page</a>.  But don&#39;t be deterred by the fact that it says it doesn&#39;t yet support user/org pages.  Because it does.  Out of the box.</p>
+<h3>Setting up a Project Page</h3>
+<p>If you want to host it as a project page.  You&#39;re literally done.  Just type:</p>
+<pre><code class="lang-bash">$ docpad deploy-ghpages --env static</code></pre>
+<p>And it will read your remote.  And push to a new gh-pages branch!  Go to <strong><em>username</em>.github.io/<em>project</em></strong> and soak it in.</p>
+<h3>Setting up a User/Org Page</h3>
+<p>If you&#39;re going to set up a separate repo, with a user/org page.  Go to your Github account and create a new repo called <strong><em>username</em>.github.io</strong>.  (yes, your <em>username</em>, not the actual string)</p>
+<p>After you&#39;ve created the repo.  Open your local repo in github and add the new remote location:</p>
+<pre><code class="lang-bash">$ git remote add pages git@example.com:my_project.git</code></pre>
+<p>I like to call that repo pages.  Assuming you have your SSH Keys set up correctly, you should be fine for pushing there automatically.</p>
+<p>Now you&#39;re going to edit your /docpad.coffee config file.  If you don&#39;t have a <strong>plugins</strong> section, add it.  Then put your ghpages config below it:</p>
+<pre><code class="lang-coffeescript">plugins:
+  ghpages:
+    deployBranch: &#39;master&#39;
+    deployRemote: &#39;pages&#39;</code></pre>
+<p>This tells the gh-pages plugin to push to your remote called <strong>&#39;pages&#39;</strong> and do it directly to the branch called <strong>&#39;master&#39;</strong>.</p>
+<p>Give it a shot!</p>
+<pre><code class="lang-bash">$ docpad deploy-ghpages --env static</code></pre>
+<p>It should automatically set up your &#39;static&#39; environment and push your code to your &#39;pages&#39; repo.</p>
+<p>Don&#39;t forget to commit all your changes to your &#39;working&#39; repo as well though.</p>
+<pre><code class="lang-bash">$ git push origin master</code></pre>
+<h3>Conclusion</h3>
+<p>That&#39;s it.  You now have a full deployment process to Github Pages on your Docpad site.  Let me know if you have any questions...</p>
+</div></article><aside id="flyoutCancel" class="flyout-cancel"></aside><aside id="recentList" class="flyout-list"><h3>Recent Posts</h3><ul><li><a href="http://seethroughtrees.github.io/posts/two-stage-css-buttons"><i class="icon-quill"></i>Two Stage - CSS Buttons</a></li><li><a href="http://seethroughtrees.github.io/posts/github-pages-with-docpad"><i class="icon-quill"></i>Deploying to Github Pages With Docpad</a></li><li><a href="http://seethroughtrees.github.io/posts/preparing-your-website-for-deployment"><i class="icon-quill"></i>Preparing Your Website For Deployment</a></li><li><a href="http://seethroughtrees.github.io/posts/styles-seed-explained"><i class="icon-quill"></i>Styles Seed Explained</a></li></ul></aside><aside id="relatedList" class="flyout-list"><h3>Related Posts</h3><ul><li><a href="http://seethroughtrees.github.io/posts/preparing-your-website-for-deployment"><i class="icon-quill"></i>Preparing Your Website For Deployment</a></li></ul></aside><footer><p>If you like this post, please follow me on Twitter &nbsp;<a href="https://twitter.com/seethroughtrees" title="SeeThroughTrees on Twitter">@SeeThroughTrees</a></p><section id="related"><h3>Related Posts</h3><nav class="linklist"><li><span>Fri Sep 20 2013</span> &raquo;&nbsp;<a href="/posts/preparing-your-website-for-deployment">Preparing Your Website For Deployment</a></li></nav></section></footer><hr/><div id="disqus-container"><div id="disqus_thread"></div>
+<script>
+	(function(){
+		window.disqus_shortname = 'seethroughtrees';
+		window.disqus_developer = '1';
+		window.disqus_url = 'http://seethroughtrees.github.io/posts/github-pages-with-docpad';
+		window.disqus_identifier = 'posts-github-pages-with-docpad';
+		window.disqus_title = 'Deploying to Github Pages With Docpad';
+		if ( window.DISQUS ) {
+			return DISQUS.reset({
+				reload: true,
+				config: function () {
+					this.page.identifier = window.disqus_identifier;
+					this.page.url = window.disqus_url;
+					this.page.title = window.disqus_title;
+				}
+			});
+		}
+		else {
+		  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		}
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></div></section><hr><footer class="main-footer"><div>© SeeThroughTrees</div></footer></div><!-- Scripts--><script >var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-44037173-1']);
+_gaq.push(['_trackPageview']);
+(function(){
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();</script><script defer="defer"  src="http://seethroughtrees.github.io/vendor/prism.min.js"></script><script defer="defer"  src="http://seethroughtrees.github.io/vendor/jquery.js"></script><script defer="defer"  src="http://seethroughtrees.github.io/scripts/script.js"></script></body></html>
